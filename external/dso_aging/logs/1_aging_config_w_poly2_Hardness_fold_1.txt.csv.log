@@ -1,0 +1,50 @@
+
+Aborted!
+
+== EXPERIMENT SETUP START ===========
+Task type            : regression
+Dataset              : ../../resource/datasets/srsd/1_aging_csv/train/Hardness_fold_1.txt.csv
+Starting seed        : 2
+Runs                 : 1
+Additional context   :
+      INFO: Replacing config seed 2 with command-line seed 2.
+== EXPERIMENT SETUP END =============
+
+== TRAINING SEED 2 START ============
+-- BUILDING PRIOR START -------------
+WARNING: Skipping invalid 'RelationalConstraint' with arguments {'targets': [], 'effectors': [], 'relationship': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'RepeatConstraint' with arguments {'tokens': 'const', 'min_': None, 'max_': 3}. Reason: Uses Tokens not in the Library.
+WARNING: Skipping invalid 'ConstConstraint' with arguments {}. Reason: Uses Tokens not in the Library.
+WARNING: Skipping invalid 'DomainRangeConstraint' with arguments {}. Reason: Prior disabled.
+WARNING: Skipping invalid 'LanguageModelPrior' with arguments {'weight': None}. Reason: Prior disabled.
+WARNING: Skipping invalid 'MultiDiscreteConstraint' with arguments {'dense': False, 'ordered': False}. Reason: Prior disabled.
+LengthConstraint: Sequences have minimum length 4.
+                  Sequences have maximum length 64.
+RelationalConstraint: [exp] cannot be a child of [log].
+InverseUnaryConstraint: RelationalConstraint: [log] cannot be a child of [exp].
+TrigConstraint: [sin, cos] cannot be a descendant of [sin, cos].
+NoInputsConstraint: Sequences contain at least one input variable Token.
+UniformArityPrior: Activated.
+SoftLengthPrior: No description available.
+RepeatConstraint: [poly] cannot occur more than 1 times.
+RelationalConstraint: [poly] cannot be a descendant of [cos, sin].
+-- BUILDING PRIOR END ---------------
+
+-- RUNNING ITERATIONS START -------------
+[00:00:00:02.19] Training iteration 1, current best R: 0.1756
+
+	** New best
+	Reward: 0.17556741240935805
+	Count Off-policy: 0
+	Count On-policy: 1
+	Originally on Policy: True
+	Invalid: False
+	Traversal: add,x11,mul,x11,add,x9,cos,mul,x3,mul,x11,x7
+	Expression:
+	  x₁₁⋅(x₉ + cos(x₁₁⋅x₃⋅x₇)) + x₁₁
+
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------
+-- RUNNING ITERATIONS START -------------

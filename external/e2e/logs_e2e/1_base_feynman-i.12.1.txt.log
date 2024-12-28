@@ -1,0 +1,8 @@
+/root/miniconda3/envs/e2e/lib/python3.8/site-packages/torch/_functorch/deprecated.py:65: UserWarning: We've integrated functorch into PyTorch. As the final step of the integration, functorch.grad is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch >= 2.3. Please use torch.func.grad instead; see the PyTorch 2.0 release notes and/or the torch.func migration guide for more details https://pytorch.org/docs/master/func.migrating.html
+  warn_deprecated('grad')
+/root/miniconda3/envs/e2e/lib/python3.8/site-packages/torch/_functorch/deprecated.py:65: UserWarning: We've integrated functorch into PyTorch. As the final step of the integration, functorch.grad is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch >= 2.3. Please use torch.func.grad instead; see the PyTorch 2.0 release notes and/or the torch.func migration guide for more details https://pytorch.org/docs/master/func.migrating.html
+  warn_deprecated('grad')
+Namespace(ckpt='./resource/ckpt/model.pt', out='./e2e-sr_w_transformer-results/1_base/feynman-i.12.1.txt', test='../../resource/datasets/srsd/1_base/test/feynman-i.12.1.txt', train='../../resource/datasets/srsd/1_base/train/feynman-i.12.1.txt', val=None)
+Fitting
+###### sympy_eq:  (0.00066959517299276794 - 0.1787511645327228*x1)*(0.004031773209102968*x0 + 0.09452154656114846)*(4.589358865681039*x0 + 0.01288810683919132)*(0.643140219358346*x1 - 12.839131803628078)
+finish success

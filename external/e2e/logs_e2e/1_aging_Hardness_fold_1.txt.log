@@ -1,0 +1,19 @@
+Namespace(ckpt='./resource/ckpt/model.pt', out='./e2e-sr_w_transformer-results/1_aging/Hardness_fold_1.txt', test='../../resource/datasets/srsd/1_aging/test/Hardness_fold_1.txt', train='../../resource/datasets/srsd/1_aging/train/Hardness_fold_1.txt', val=None)
+Traceback (most recent call last):
+  File "runner.py", line 75, in <module>
+    main(argparser.parse_args())
+  File "runner.py", line 65, in main
+    eq_str = train(model, args.train)
+  File "runner.py", line 29, in train
+    train_samples, train_targets = load_dataset(dataset_file_path)
+  File "runner.py", line 24, in load_dataset
+    tabular_dataset = np.loadtxt(dataset_file_path, delimiter=delimiter)
+  File "/root/miniconda3/envs/e2e/lib/python3.8/site-packages/numpy/lib/npyio.py", line 1148, in loadtxt
+    for x in read_data(_loadtxt_chunksize):
+  File "/root/miniconda3/envs/e2e/lib/python3.8/site-packages/numpy/lib/npyio.py", line 999, in read_data
+    items = [conv(val) for (conv, val) in zip(converters, vals)]
+  File "/root/miniconda3/envs/e2e/lib/python3.8/site-packages/numpy/lib/npyio.py", line 999, in <listcomp>
+    items = [conv(val) for (conv, val) in zip(converters, vals)]
+  File "/root/miniconda3/envs/e2e/lib/python3.8/site-packages/numpy/lib/npyio.py", line 736, in floatconv
+    return float(x)
+ValueError: could not convert string to float: '0.08301\t0.02955\t0.15694\t0.04122\t0.12052\t0.04535\t0.21614\t0.05316\t3.574\t0.043\t9.33\t79.8'

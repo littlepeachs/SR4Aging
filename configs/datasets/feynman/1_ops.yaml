@@ -1,0 +1,36 @@
+FeynmanICh29Eq16:
+  kwargs: null
+  noise_rate: 0.0
+  output_dir: ./resource/datasets/srsd/1_domain/
+  output_ext: .txt
+  sample_size: 1000
+FeynmanICh30Eq3:
+  kwargs: null
+  noise_rate: 0.0
+  output_dir: ./resource/datasets/srsd/1_domain/
+  output_ext: .txt
+  sample_size: 1000
+FeynmanICh37Eq4:
+  kwargs: null
+  noise_rate: 0.0
+  output_dir: ./resource/datasets/srsd/1_domain/
+  output_ext: .txt
+  sample_size: 1000
+FeynmanICh50Eq26:
+  kwargs: null
+  noise_rate: 0.0
+  output_dir: ./resource/datasets/srsd/1_domain/
+  output_ext: .txt
+  sample_size: 1000
+FeynmanICh6Eq20:
+  kwargs: null
+  noise_rate: 0.0
+  output_dir: ./resource/datasets/srsd/1_domain/
+  output_ext: .txt
+  sample_size: 1000
+FeynmanICh9Eq18:
+  kwargs: null
+  noise_rate: 0.0
+  output_dir: ./resource/datasets/srsd/1_domain/
+  output_ext: .txt
+  sample_size: 1000

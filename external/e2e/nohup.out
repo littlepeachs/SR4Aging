@@ -1,0 +1,27 @@
+Namespace(ckpt='./resource/ckpt/model.pt', out='./e2e-sr_w_transformer-results/srsd-feynman_aging/Fe_fold_1.txt', test='../../resource/datasets/srsd/1_aging/test/Fe_fold_1.txt', train='../../resource/datasets/srsd/1_aging/train/Fe_fold_1.txt', val=None)
+> /ssd/liwentao/SRSD/srsd-benchmark/external/e2e/runner.py(26)load_dataset()
+-> return tabular_dataset[:, :-1], tabular_dataset[:, -1]
+(Pdb) Traceback (most recent call last):
+  File "runner.py", line 75, in <module>
+    main(argparser.parse_args())
+  File "runner.py", line 66, in main
+    eq_str = train(model, args.train)
+  File "runner.py", line 30, in train
+    train_samples, train_targets = load_dataset(dataset_file_path)
+  File "runner.py", line 26, in load_dataset
+    return tabular_dataset[:, :-1], tabular_dataset[:, -1]
+  File "runner.py", line 26, in load_dataset
+    return tabular_dataset[:, :-1], tabular_dataset[:, -1]
+  File "/home/liwentao/miniconda3/envs/Transformer-M/lib/python3.8/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/liwentao/miniconda3/envs/Transformer-M/lib/python3.8/bdb.py", line 112, in dispatch_line
+    self.user_line(frame)
+  File "/home/liwentao/miniconda3/envs/Transformer-M/lib/python3.8/pdb.py", line 262, in user_line
+    self.interaction(frame, None)
+  File "/home/liwentao/miniconda3/envs/Transformer-M/lib/python3.8/pdb.py", line 357, in interaction
+    self._cmdloop()
+  File "/home/liwentao/miniconda3/envs/Transformer-M/lib/python3.8/pdb.py", line 322, in _cmdloop
+    self.cmdloop()
+  File "/home/liwentao/miniconda3/envs/Transformer-M/lib/python3.8/cmd.py", line 126, in cmdloop
+    line = input(self.prompt)
+OSError: [Errno 9] Bad file descriptor
